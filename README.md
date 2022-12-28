@@ -61,7 +61,7 @@ jupyter notebook notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
 
 ### Docker
 
-To create a Docker, run the command:
+To create a [Docker](https://docker.com), run the command:
 
 ```bash
 docker build -t tdc-tcr-epitope-binding-affinity .
