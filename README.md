@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-We'll use the [Therapeutics Data Commons](https://tdcommons.ai/) Python package to download open-source ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) datasets that are meaningful in pharmaceutical research. In this repository, we'll use a dataset called [TCR-Epitope Binding Affinity](https://tdcommons.ai/multi_pred_tasks/tcrepitope/). The code will be in the notebook [notebooks/tdc-tcr-epitope-binding-affinity.ipynb](notebooks/tdc-tcr-epitope-binding-affinity.ipynb).
+We'll use the [Therapeutics Data Commons](https://tdcommons.ai/) Python package to download open-source ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) datasets that are meaningful in pharmaceutical research. In this repository, we'll use a dataset called [TCR-Epitope Binding Affinity](https://tdcommons.ai/multi_pred_tasks/tcrepitope/). The code will be in the notebook [notebooks/tdc-tcr-epitope-binding-affinity.ipynb](notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb).
 
 ![TCR-epitope binding](notebooks/tcr-epitope-binding.png)
 
@@ -17,7 +17,7 @@ Then, we'll show how to combine this embedding with a simple neural network to c
 ## Running things locally
 ### Creating the `conda` environment
 
-To install all of the required Python packages, you'll need to create a [conda](https://docs.conda.io/en/latest/miniconda.html) environment. Once you have `conda` installed, run the command:
+To install all of the required Python packages, you'll need to create a [conda](https://docs.conda.io/en/latest/miniconda.html) environment. Follow the [conda website](https://docs.conda.io/en/latest/miniconda.html) directions to download and install `conda` ([Anaconda](https://www.anaconda.com/products/distribution) works too). Once you have `conda` installed, run the command:
 
 ```bash
 conda env create -f environment.yml
@@ -32,7 +32,7 @@ conda activate tdc-tcr-epitope-binding-affinity-env
 At this point you should be able to run the Jupyter Notebook:
 
 ```bash
-jupyter notebook notebooks/notebooks/tdc-tcr-epitope-binding-affinity.ipynb
+jupyter notebook notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
 ```
 
 ## Running things in a container
@@ -56,7 +56,7 @@ apptainer shell tdc-tcr-epitope-binding-affinity.sif
 At this point, you'll be able to run the Jupyter Notebook:
 
 ```bash
-jupyter notebook notebooks/notebooks/tdc-tcr-epitope-binding-affinity.ipynb
+jupyter notebook notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
 ```
 
 ### Docker
@@ -76,5 +76,5 @@ docker run tdc-tcr-epitope-binding-affinity
 And finally you can run the Jupyter Notebook:
 
 ```bash
-jupyter notebook notebooks/notebooks/tdc-tcr-epitope-binding-affinity.ipynb
+jupyter notebook notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
 ```

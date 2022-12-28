@@ -4,7 +4,7 @@ FROM continuumio/miniconda3@sha256:58b1c7df8d69655ffec017ede784a075e3c2e9feff0fc
 ENV PIP_ROOT_USER_ACTION=ignore
 
 # Copy all files into the image
-COPY *.py .
+COPY notebooks/tdc-tcr-epitope-binding-affinity.ipynb notebooks/tdc-tcr-epitope-binding-affinity.ipynb
 COPY requirements* .
 COPY environment.yml .
 COPY README.md .
