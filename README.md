@@ -1,6 +1,8 @@
 # Bioinformatics model for protein therapeutics
 
-We'll use the [Therapeutics Data Commons](https://tdcommons.ai/) Python package to download open-source ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) datasets that are meaningful in pharmaceutical research. In this notebook, we'll use a dataset called [TCR-Epitope Binding Affinity](https://tdcommons.ai/multi_pred_tasks/tcrepitope/).
+## Synopsis
+
+We'll use the [Therapeutics Data Commons](https://tdcommons.ai/) Python package to download open-source ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) datasets that are meaningful in pharmaceutical research. In this repository, we'll use a dataset called [TCR-Epitope Binding Affinity](https://tdcommons.ai/multi_pred_tasks/tcrepitope/). The code will be in the notebook [notebooks/tdc-tcr-epitope-binding-affinity.ipynb](notebooks/tdc-tcr-epitope-binding-affinity.ipynb).
 
 ![TCR-epitope binding](notebooks/tcr-epitope-binding.png)
 
@@ -11,3 +13,68 @@ We'll see how to use the open-sourced [bio-embeddings](https://docs.bioembedding
 Then, we'll show how to combine this embedding with a simple neural network to create a [binary classifier](https://en.wikipedia.org/wiki/Binary_classification) for the TCR-epitope binding affinity prediction (True=They Bind, False=They don't bind).
 
 ![encoder-decoder Dewey Decimal](notebooks/encoder-decoder.png)
+
+## Running things locally
+### Creating the `conda` environment
+
+To install all of the required Python packages, you'll need to create a [conda](https://docs.conda.io/en/latest/miniconda.html) environment. Once you have `conda` installed, run the command:
+
+```bash
+conda env create -f environment.yml
+```
+
+Once the environment is successfully created, activate it by running:
+
+```bash
+conda activate tdc-tcr-epitope-binding-affinity-env
+```
+
+At this point you should be able to run the Jupyter Notebook:
+
+```bash
+jupyter notebook notebooks/notebooks/tdc-tcr-epitope-binding-affinity.ipynb
+```
+
+## Running things in a container
+
+If you don't want to install `conda`, then you can run the Jupyter notebook from within a container.
+
+### Apptainer
+
+To create an [Apptainer](https://apptainer.org), run the command:
+
+```bash
+apptainer build tdc-tcr-epitope-binding-affinity.sif tdc-tcr-epitope-binding-affinity.def
+```
+
+Then, run:
+
+```bash 
+apptainer shell tdc-tcr-epitope-binding-affinity.sif
+```
+
+At this point, you'll be able to run the Jupyter Notebook:
+
+```bash
+jupyter notebook notebooks/notebooks/tdc-tcr-epitope-binding-affinity.ipynb
+```
+
+### Docker
+
+To create a Docker, run the command:
+
+```bash
+docker build -t tdc-tcr-epitope-binding-affinity .
+```
+
+Now you can run:
+
+```bash
+docker run tdc-tcr-epitope-binding-affinity
+```
+
+And finally you can run the Jupyter Notebook:
+
+```bash
+jupyter notebook notebooks/notebooks/tdc-tcr-epitope-binding-affinity.ipynb
+```
