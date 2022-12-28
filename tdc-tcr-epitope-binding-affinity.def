@@ -1,0 +1,29 @@
+# apptainer build tdc-tcr-epitope-binding-affinity.sif tdc-tcr-epitope-binding-affinity.def
+
+Bootstrap: docker
+From:  continuumio/miniconda3@sha256:58b1c7df8d69655ffec017ede784a075e3c2e9feff0fc50ef65300fc75aa45ae
+
+%files
+    # Copy files to image
+    *.py .
+    requirements* .
+    environment.yml .
+    README.md .
+
+%post
+
+    export PIP_ROOT_USER_ACTION=ignore
+
+    # Conda create environment and activate it.
+    conda update --name base --channel defaults conda
+    conda env update --name base --file environment.yml --prune
+
+
+%labels
+    Author Tony Reina
+    Version v0.1
+
+%help
+    This is the definition file for creating an apptainer
+    for the TDC TCR-Epitope Binding Affinity Prediction Task.
+    https://tdcommons.ai/multi_pred_tasks/tcrepitope/

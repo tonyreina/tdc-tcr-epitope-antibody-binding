@@ -1,0 +1,17 @@
+name: tdc-tcr-epitope-binding-affinity-env
+# conda env create -f environment.yml
+# conda activate tdc-tcr-epitope-binding-affinity-env
+
+channels:
+- conda-forge
+- defaults
+dependencies:
+- ipykernel=6.15.2
+- ipywidgets=7.6.5
+- jupyter=1.0.0
+- pandas-profiling=3.6.1
+- pip=22.3.1
+- python=3.9.13
+- pip:
+    - -r requirements.txt
+- widgetsnbextension=3.5.2
