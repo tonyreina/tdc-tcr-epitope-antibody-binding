@@ -3,3 +3,4 @@
 
 bio_embeddings[all]==0.2.2
 PyTDC==0.3.8
+xgboost==1.7.2

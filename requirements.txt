@@ -1304,6 +1304,7 @@ numpy==1.23.5 \
     #   torchmetrics
     #   transformers
     #   umap-learn
+    #   xgboost
 numpydoc==1.5.0 \
     --hash=sha256:b0db7b75a32367a0e25c23b397842c65e344a1206524d16c8069f0a1c91b5f4c \
     --hash=sha256:c997759fb6fc32662801cece76491eedbc0ec619b514932ffd2b270ae89c07f9
@@ -1879,6 +1880,7 @@ scipy==1.8.1 \
     #   pynndescent
     #   scikit-learn
     #   umap-learn
+    #   xgboost
 seaborn==0.12.1 \
     --hash=sha256:a9eb39cba095fcb1e4c89a7fab1c57137d70a715a7f2eefcd41c9913c4d4ed65 \
     --hash=sha256:bb1eb1d51d3097368c187c3ef089c0288ec1fe8aa1c69fb324c68aa1d02df4c1
@@ -2277,6 +2279,14 @@ werkzeug==2.2.2 \
 word2number==1.1 \
     --hash=sha256:70e27a5d387f67b04c71fbb7621c05930b19bfd26efd6851e6e0f9969dcde7d0
     # via bio-embeddings-allennlp
+xgboost==1.7.2 \
+    --hash=sha256:011126d470179177486e92c6a52c3f5deb9dd3e07a65eec5df9bf7dd1a70d2d0 \
+    --hash=sha256:08ca6b3400dfd16f6159b2881f41b7443024339c14c5dbe10bba117af79126ab \
+    --hash=sha256:51351d0a5e26016c348df23cdb2069a26bf41a9e586a24e552078435a110510a \
+    --hash=sha256:6f192542fbee7f07891a3b78616ef1f87013e22e33836507344a230188db784e \
+    --hash=sha256:a3cf6d2e6e56147546a725d8301f06af33b8467179e17b11f63be9a6d7a9ccd3 \
+    --hash=sha256:f1a749aedb9330afc48007cc78b8bbbbea35ce372f48a2735f9c71bbc7b8dcfb
+    # via -r requirements.in
 yarl==1.8.2 \
     --hash=sha256:009a028127e0a1755c38b03244c0bea9d5565630db9c4cf9572496e947137a87 \
     --hash=sha256:0414fd91ce0b763d4eadb4456795b307a71524dbacd015c657bb2a39db2eab89 \
