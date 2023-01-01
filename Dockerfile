@@ -11,7 +11,7 @@ COPY README.md .
 
 # Install the conda and pip packages into the base conda environment
 RUN conda update --name base --channel defaults conda
-RUN conda env update --name base --file environment.yml --prune
+RUN conda env update --name base --file environment.yml --prune && conda clean -afy
 
 LABEL version="0.1"
 LABEL description="Docker container for TDC TCR-Epitope Binding Affinity Prediction Task"

@@ -3,4 +3,5 @@
 
 bio_embeddings[all]==0.2.2
 PyTDC==0.3.8
+tensorflow==2.11.0
 xgboost==1.7.2

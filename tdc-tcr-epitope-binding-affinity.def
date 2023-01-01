@@ -16,7 +16,7 @@ From:  continuumio/miniconda3@sha256:58b1c7df8d69655ffec017ede784a075e3c2e9feff0
 
     # Conda create environment and activate it.
     conda update --name base --channel defaults conda
-    conda env update --name base --file environment.yml --prune
+    conda env update --name base --file environment.yml --prune && conda clean -afy
 
 
 %labels
