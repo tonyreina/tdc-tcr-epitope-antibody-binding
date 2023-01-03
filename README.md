@@ -14,6 +14,12 @@ Then, we'll show how to combine this embedding with a simple neural network to c
 
 ![encoder-decoder Dewey Decimal](notebooks/encoder-decoder.png)
 
+## Getting the dataset
+
+The [Therapeutics Data Commons (TDC)](https://tdcommons.ai/) dataset can be automatically downloaded via their open-sourced Python library. However, it will take significant time (~ 40 minutes on a GPU or ~ 6 hours on a CPU) to compute the [Evolutionary Scale Model (ESM-1b)](https://github.com/facebookresearch/esm) embedding vectors. 
+
+To save you time, I've uploaded the preprocessed data as Pickle files on [Zenodo](https://zenodo.org/record/7502654). If you download those 3 files, then the Python script will skip the embedding step.
+
 ## Running things locally
 ### Creating the `conda` environment
 
