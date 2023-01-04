@@ -87,8 +87,6 @@ jupyter notebook notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
 
 ### References
 
-References:
-
 1. Weber, Anna, Jannis Born, and María Rodriguez Martínez. "TITAN: T-cell receptor specificity prediction with bimodal attention networks." Bioinformatics 37.Supplement_1 (2021): i237-i244.
 
 2. Bagaev, Dmitry V., et al. "VDJdb in 2019: database extension, new analysis infrastructure and a T-cell receptor motif compendium." Nucleic Acids Research 48.D1 (2020): D1057-D1062.
@@ -100,4 +98,4 @@ References:
 
 ### Licenses
 
-The TDC dataset is a CC-BY-4.0. The ESM-1b model is MIT license.
+The TDC dataset is a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). The ESM-1b model is [MIT license](https://en.wikipedia.org/wiki/MIT_License).
