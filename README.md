@@ -84,3 +84,20 @@ And finally you can run the Jupyter Notebook:
 ```bash
 jupyter notebook notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
 ```
+
+### References
+
+References:
+
+1. Weber, Anna, Jannis Born, and María Rodriguez Martínez. "TITAN: T-cell receptor specificity prediction with bimodal attention networks." Bioinformatics 37.Supplement_1 (2021): i237-i244.
+
+2. Bagaev, Dmitry V., et al. "VDJdb in 2019: database extension, new analysis infrastructure and a T-cell receptor motif compendium." Nucleic Acids Research 48.D1 (2020): D1057-D1062.
+
+3. Dines, Jennifer N., et al. "The immunerace study: A prospective multicohort study of immune response action to covid-19 events with the immunecode™ open access database." medRxiv (2020).
+
+4. Alexander Rives, Joshua Meier, Tom Sercu, Siddharth Goyal, Zeming Lin, Jason Liu, Demi Guo, Myle Ott, C. Lawrence Zitnick, Jerry Ma, Rob Fergus. "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences." bioRxiv 622803; doi: https://doi.org/10.1101/622803  https://www.biorxiv.org/content/10.1101/622803v4
+
+
+### Licenses
+
+The TDC dataset is a CC-BY-4.0. The ESM-1b model is MIT license.
