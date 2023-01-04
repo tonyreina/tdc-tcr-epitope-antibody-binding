@@ -5,7 +5,6 @@ From:  continuumio/miniconda3@sha256:58b1c7df8d69655ffec017ede784a075e3c2e9feff0
 
 %files
     # Copy files to image
-    notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb
     requirements* .
     environment.yml .
     README.md .
