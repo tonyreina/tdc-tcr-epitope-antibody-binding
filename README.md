@@ -1,5 +1,8 @@
 # Bioinformatics model for protein therapeutics
 
+## NOTE
+This is *not* a Resilience project and the code/opinions/recommendations are my personal work and mine alone.
+
 ## Synopsis
 
 We'll use the [Therapeutics Data Commons](https://tdcommons.ai/) Python package to download open-source ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) datasets that are meaningful in pharmaceutical research. In this repository, we'll use a dataset called [TCR-Epitope Binding Affinity](https://tdcommons.ai/multi_pred_tasks/tcrepitope/). The code will be in the notebook [notebooks/tdc-tcr-epitope-binding-affinity.ipynb](notebooks/tdc-tcr-epitope-binding-affinity-model.ipynb).
