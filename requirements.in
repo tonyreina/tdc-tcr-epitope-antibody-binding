@@ -1,8 +1,0 @@
-# pip install pip-tools
-# pip-compile --generate-hashes --output-file requirements.txt requirements.in
-
-bio_embeddings[all]==0.2.2
-lightning==1.8.6
-PyTDC==0.3.8
-xgboost==1.7.2
-
